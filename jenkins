@@ -1,5 +1,22 @@
-<html>
-<body>
-<h1> hhhhhhh </h1>
-</body>
-</html>
+pipeline {
+    agent any
+
+    stages {
+        stage('test') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+         stage('deploy') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('deployment') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
